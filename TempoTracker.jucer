@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="o1rB2g" name="TempoTracker" projectType="guiapp" version="0.0.1"
+              bundleIdentifier="com.leidenuniv.govertb.TempoTracker" includeBinaryInAppConfig="1"
+              jucerVersion="4.1.0" companyWebsite="https://govertbrinkmann.nl/projects/api">
+  <MAINGROUP id="NpSgI0" name="TempoTracker">
+    <GROUP id="{2BF4C414-0F4C-109B-E7E6-162CAC0A4C6D}" name="Source">
+      <FILE id="bhaja9" name="ScheirerResonator.h" compile="0" resource="0"
+            file="Source/ScheirerResonator.h"/>
+      <FILE id="QQm0vZ" name="ScheirerResonator.cpp" compile="1" resource="0"
+            file="Source/ScheirerResonator.cpp"/>
+      <FILE id="FNkNIH" name="bpmPoller.cpp" compile="1" resource="0" file="Source/bpmPoller.cpp"/>
+      <FILE id="Ah15Yn" name="bpmPoller.h" compile="0" resource="0" file="Source/bpmPoller.h"/>
+      <FILE id="ANFhwl" name="ScheirerBand.cpp" compile="1" resource="0"
+            file="Source/ScheirerBand.cpp"/>
+      <FILE id="KxEZAA" name="ScheirerBand.h" compile="0" resource="0" file="Source/ScheirerBand.h"/>
+      <FILE id="YVDh3E" name="ScheirerEnergyFetcher.cpp" compile="1" resource="0"
+            file="Source/ScheirerEnergyFetcher.cpp"/>
+      <FILE id="OSM4Xa" name="ScheirerEngergyFetcher.h" compile="0" resource="0"
+            file="Source/ScheirerEngergyFetcher.h"/>
+      <FILE id="Hu7zfg" name="ScheirerEnvelope.cpp" compile="1" resource="0"
+            file="Source/ScheirerEnvelope.cpp"/>
+      <FILE id="ebBIGi" name="ScheirerEnvelope.h" compile="0" resource="0"
+            file="Source/ScheirerEnvelope.h"/>
+      <FILE id="FDtLPp" name="ScheirerBeatTracker.cpp" compile="1" resource="0"
+            file="Source/ScheirerBeatTracker.cpp"/>
+      <FILE id="H2QAIE" name="ScheirerBeatTracker.h" compile="0" resource="0"
+            file="Source/ScheirerBeatTracker.h"/>
+      <FILE id="hJ0ShW" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="v1Imy4" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+    <FILE id="ERjtes" name="pause.png" compile="0" resource="1" file="Source/pause.png"/>
+    <FILE id="jMjrHm" name="play.png" compile="0" resource="1" file="Source/play.png"/>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="1" optimisation="1" targetName="TempoTracker"/>
+        <CONFIGURATION name="Release" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="0" optimisation="3" targetName="TempoTracker"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile" cppLanguageStandard="-std=c++11">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/" isDebug="1" optimisation="1"
+                       targetName="TempoTracker"/>
+        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="3"
+                       targetName="TempoTracker"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+    <VS2015 targetFolder="Builds/VisualStudio2015">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="1" optimisation="1" targetName="TempoTracker"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="0" optimisation="3" targetName="TempoTracker"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2015>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="0" useLocalCopy="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <OSX enableCxx11="1"/>
+  </LIVE_SETTINGS>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
